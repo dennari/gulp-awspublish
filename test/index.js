@@ -44,7 +44,7 @@ describe('gulp-awspublish', function () {
 
       stream.on('error', function(err) {
         expect(err).to.be.ok;
-        expect(err.statusCode).to.eq(403);
+        expect(err.statusCode).to.eq(301);
         done();
       });
 
